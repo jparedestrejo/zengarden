@@ -1,4 +1,4 @@
 node_modules
 *.css
 .cache
-.DS_Store
+/.DS_Store/
