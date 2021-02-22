@@ -4,7 +4,7 @@
 
 // color palette - these colors will be the color swatches of the Colors section
 
-@import '_color';
+@import 'partials/color';
 
 // additional colors
 
@@ -41,21 +41,21 @@ xPatterns
   padding: 6px;
 }
 
-@import 'header-nav';
+@import 'partials/header-nav';
 
 /* -------------------------------- 
 
 xPage title 
 
 -------------------------------- */
-@import '_main';
+@import 'partials/main';
 
 /* -------------------------------- 
 
 xTypography 
 
 -------------------------------- */
- @import '_typography';
+ @import 'partials/typography';
 
 h2 {
   font-weight: bold;
