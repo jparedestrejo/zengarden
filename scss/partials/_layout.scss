@@ -5,7 +5,7 @@
     background-color:  hsl(219, 65%, 41%); 
 
     @include breakpoint(medium){
-      display: grid;
+      display: block;
       background-color: yellow;
     }
   @include breakpoint(small){
