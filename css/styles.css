@@ -1,7 +1,7 @@
-@import 'partials/prefix-mixins';
-@import 'partials/layout'; 
-@import 'partials/typography';
-@import 'partials/color';
+.page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: yellow;
+}
 
-
-
+/*# sourceMappingURL=styles.css.map */
