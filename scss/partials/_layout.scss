@@ -9,9 +9,6 @@
     margin-top: 0%;
     background-color: orange;
  }
- @include breakpoint(medium){
-  display: flex;
-  background-color: yellow;
-}
+
 }
 }
