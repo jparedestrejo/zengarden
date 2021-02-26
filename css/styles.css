@@ -1,20 +1,7 @@
-/* Error: Undefined mixin.
- *   ,
- * 5 | /     @include MQ(L) {
- * 6 | |       /* title goes into the header on big devices *∕
- * 7 | |       color: $color-5;
- * 8 | \     }
- *   '
- *   scss\partials\_main.scss 5:5  @import
- *   scss\styles.scss 2:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502  \250c      @include MQ(L) {\a 6 \2502  \2502        /* title goes into the header on big devices */\a 7 \2502  \2502        color: $color-5;\a 8 \2502  \2514      }\a   \2575 \a   scss\\partials\\_main.scss 5:5  @import\a   scss\\styles.scss 2:9          root stylesheet";
+.page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: yellow;
 }
+
+/*# sourceMappingURL=styles.css.map */
