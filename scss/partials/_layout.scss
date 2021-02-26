@@ -1,6 +1,16 @@
-.page-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  background-color: orange;
+@supports (display: grid){
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: orange;
+  }
 }
-
+@supports not(display: grid){
+  .page-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+  }
+}
