@@ -2,7 +2,7 @@
   .page-wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: orange;
+    background-color: greenyellow;
   }
 }
 @supports not(display: grid){
