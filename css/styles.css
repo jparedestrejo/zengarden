@@ -8,6 +8,13 @@
     .page-wrapper {
       display: block;
       margin-top: 0%;
+      background-color: orange;
+    }
+  }
+  @media (max-width: 800px) {
+    .page-wrapper {
+      display: flex;
+      background-color: yellow;
     }
   }
 }
