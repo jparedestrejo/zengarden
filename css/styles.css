@@ -4,14 +4,11 @@
     grid-template-columns: repeat(5, 1fr);
     background-color: greenyellow;
   }
-}
-@supports not (display: grid) {
-  .page-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: space-between;
-    height: 100%;
+  @media (max-width: 360px) {
+    .page-wrapper {
+      display: block;
+      margin-top: 0%;
+    }
   }
 }
 

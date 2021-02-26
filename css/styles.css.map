@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/partials/_layout.scss"],"names":[],"mappings":"AAAA;EACE;IACE;IACA;IACA;;;AAGJ;EACE;IACE;IACA;IACA;IACA;IACA","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/partials/_layout.scss","../scss/partials/_mixins.scss"],"names":[],"mappings":"AAAA;EACE;IACE;IACA;IACA;;ECOI;IDVN;MAME;MACA","file":"styles.css"}
