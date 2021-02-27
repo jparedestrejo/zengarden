@@ -43,56 +43,6 @@
     grid-area: main;
   }
 }
-@supports (display: grid) {
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "intro intro intro" "sidebar main main";
-  }
-
-  @media (max-width: 800px) {
-    .page-wrapper {
-      display: block;
-    }
-  }
-  @media (max-width: 360px) {
-    .page-wrapper {
-      display: block;
-      margin-top: 0%;
-    }
-  }
-  .intro {
-    grid-area: intro;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header ." "summary summary ." ". preamble preamble";
-  }
-
-  .intro > header {
-    grid-area: header;
-    border: 1px solid red;
-  }
-
-  .intro > .summary {
-    grid-area: summary;
-    border: 1px solid blue;
-  }
-
-  .intro > .preamble {
-    grid-area: preamble;
-    border: 1px solid green;
-  }
-
-  .sidebar {
-    grid-area: sidebar;
-    border: 1px solid orange;
-  }
-
-  .main {
-    grid-area: main;
-    border: 1px solid yellow;
-  }
-}
 /*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
