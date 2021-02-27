@@ -24,12 +24,15 @@
   }
   .intro > header {
     grid-area: header;
+    border: 1px solid red;
   }
   .intro > summary {
     grid-area: summary;
+    border: 1px solid blue;
   }
   .intro > preamble {
     grid-area: preamble;
+    border: 1px solid green;
   }
 
   .sidebar {
