@@ -44,6 +44,24 @@
 
   .main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "explanation participation" "benefits requirements" "footer footer";
+  }
+  .main.explanation {
+    grid-area: explanation;
+  }
+  .main.participation {
+    grid-area: participation;
+  }
+  .main.benefits {
+    grid-area: benefits;
+  }
+  .main.requirements {
+    grid-area: requirements;
+  }
+  .mainfooter {
+    grid-area: footer;
   }
 }
 /* -------------------------------- 
