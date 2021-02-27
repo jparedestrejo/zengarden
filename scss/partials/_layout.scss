@@ -20,7 +20,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
-                          "summary summary sumary"
+                          "summary summary summary"
                           ". preamble preamble";
     &>header{
       grid-area: header;
