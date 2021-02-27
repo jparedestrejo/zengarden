@@ -2,7 +2,7 @@
   .page-wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color:  hsl(219, 65%, 41%); 
+    background-color: lightblue;
 
     @include breakpoint(medium){
       display: block;
