@@ -60,7 +60,7 @@
   .main.requirements {
     grid-area: requirements;
   }
-  .mainfooter {
+  .main > footer {
     grid-area: footer;
     text-align: center;
   }

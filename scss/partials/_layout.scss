@@ -62,7 +62,7 @@
     &.requirements{
       grid-area: requirements;
     }
-    &footer{
+    &>footer{
       grid-area: footer;
       text-align: center;
     }
