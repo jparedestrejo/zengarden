@@ -2,12 +2,14 @@
 
 @supports (display: grid){
   .page-wrapper {
+    @include breakpoint(large){
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
    
     grid-template-areas: "intro intro intro"
                           "sidebar main main";
+    }
     @include breakpoint(medium){
       display: block;
    
