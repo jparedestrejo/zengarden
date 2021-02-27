@@ -30,17 +30,20 @@
     padding: 5px;
   }
   .intro > .summary {
-    grid-area: header;
+    grid-area: summary;
     border: 1px solid blue;
-    width: 70%;
+    width: 80%;
+    padding: 5px;
   }
   .intro > .preamble {
     grid-area: preamble;
     border: 1px solid green;
+    padding: 5px;
   }
 
   .sidebar {
     grid-area: sidebar;
+    padding: 5px;
   }
 
   .main {
