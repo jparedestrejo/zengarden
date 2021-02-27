@@ -25,10 +25,12 @@
   .intro > header {
     grid-area: header;
     border: 1px solid red;
+    width: 60%;
   }
   .intro > .summary {
     grid-area: summary;
     border: 1px solid blue;
+    width: 50%;
   }
   .intro > .preamble {
     grid-area: preamble;

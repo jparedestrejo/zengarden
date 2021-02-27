@@ -27,10 +27,12 @@
     &>header{
       grid-area: header;
       border: 1px solid red;
+      width: 60%;
     }
     &>.summary{
       grid-area: summary;
       border: 1px solid blue;
+      width: 50%;
     }
     &>.preamble{
       grid-area: preamble;
