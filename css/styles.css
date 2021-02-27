@@ -29,7 +29,7 @@
     width: 80%;
   }
   .intro > .summary {
-    grid-area: summary;
+    grid-area: header;
     border: 1px solid blue;
     width: 70%;
   }
