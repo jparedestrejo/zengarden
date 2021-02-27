@@ -2,61 +2,6 @@
 //@import 'partials/prefix-mixins';
 @import "partials/mixins";
 @import 'partials/layout'; 
-//@import 'partials/typography';
+@import 'partials/typography';
 
 
-@supports (display: grid) {
-    .page-wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "intro intro intro" "sidebar main main";
-    }
-    @media (max-width: 800px) {
-      .page-wrapper {
-        display: block;
-      }
-    }
-    @media (max-width: 360px) {
-      .page-wrapper {
-        display: block;
-        margin-top: 0%;
-      }
-    }
-  
-    .intro {
-      grid-area: intro;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "header header header" "summary summary summary" ". preamble preamble";
-    }
-    .intro > header {
-      grid-area: header;
-      border: 1px solid;
-      border-color: $header-border-color;
-    }
-    .intro > .summary {
-      grid-area: summary;
-      border: 1px solid;
-      border-color: $summary-border-color;
-    }
-    .intro > .preamble {
-      grid-area: preamble;
-      border: 1px solid;
-      border-color: $preamble-border-color;
-    }
-  
-    .sidebar {
-      grid-area: sidebar;
-      border: 1px solid;
-      border-color: $sidebar-border-color;
-    }
-  
-    .main {
-      grid-area: main;
-      border: 1px solid;
-      border-color: $main-border-color;
-    }
-  }
-  
-  /*# sourceMappingURL=styles.css.map */
-  
