@@ -26,11 +26,11 @@
       grid-area: header;
       border: 1px solid red;
     }
-    &>summary{
+    &>.summary{
       grid-area: summary;
       border: 1px solid blue;
     }
-    &>preamble{
+    &>.preamble{
       grid-area: preamble;
       border: 1px solid green;
     }
