@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: lightblue;
+    grid-template-areas: "intro intro intro" "sidebar main main";
   }
   @media (max-width: 800px) {
     .page-wrapper {
@@ -16,6 +17,18 @@
       margin-top: 0%;
       background-color: orange;
     }
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .main {
+    grid-area: main;
   }
 }
 

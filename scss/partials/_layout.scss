@@ -3,16 +3,25 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: lightblue;
-
+    grid-template-areas: "intro intro intro"
+                          "sidebar main main";
     @include breakpoint(medium){
       display: block;
       background-color: yellow;
     }
-  @include breakpoint(small){
+    @include breakpoint(small){
     display: block;
     margin-top: 0%;
     background-color: orange;
- }
-
-}
+    }
+  }
+  .intro{
+    grid-area: intro;
+  }
+  .sidebar{
+    grid-area: sidebar;
+  }
+  .main{
+    grid-area: main;
+  }
 }
