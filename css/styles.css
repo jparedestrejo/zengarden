@@ -27,6 +27,7 @@
     grid-area: header;
     border: 1px solid red;
     width: 80%;
+    padding: 5px;
   }
   .intro > .summary {
     grid-area: header;
