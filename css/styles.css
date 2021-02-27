@@ -62,6 +62,7 @@
   }
   .mainfooter {
     grid-area: footer;
+    justify-self: center;
   }
 }
 /* -------------------------------- 
