@@ -1,8 +1,8 @@
 @import 'partials/color'; 
-//@import 'partials/prefix-mixins';
+@import 'partials/prefix-mixins';
 @import "partials/mixins";
 @import 'partials/layout'; 
-//@import 'partials/typography';
+@import 'partials/typography';
 
 
 @supports (display: grid) {
@@ -31,30 +31,25 @@
     }
     .intro > header {
       grid-area: header;
-      border: 1px solid;
-      border-color: $header-border-color;
+      border: 1px solid red;
     }
     .intro > .summary {
       grid-area: summary;
-      border: 1px solid;
-      border-color: $summary-border-color;
+      border: 1px solid blue;
     }
     .intro > .preamble {
       grid-area: preamble;
-      border: 1px solid;
-      border-color: $preamble-border-color;
+      border: 1px solid green;
     }
   
     .sidebar {
       grid-area: sidebar;
-      border: 1px solid;
-      border-color: $sidebar-border-color;
+      border: 1px solid orange;
     }
   
     .main {
       grid-area: main;
-      border: 1px solid;
-      border-color: $main-border-color;
+      border: 1px solid yellow;
     }
   }
   
