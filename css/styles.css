@@ -43,6 +43,17 @@
     grid-area: main;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=styles.css.map */
