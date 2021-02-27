@@ -19,8 +19,8 @@
     grid-area: intro;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header"
-                          "summary summary summary"
+    grid-template-areas: "header header ."
+                          "summary summary ."
                           ". preamble preamble";
     &>header{
       grid-area: header;
