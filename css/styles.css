@@ -73,6 +73,7 @@ xTypography
 body {
   font-family:Arial, Helvetica, sans-serif;
   font-size: 20px;
+  background-image: url(https://unsplash.com/photos/IZ01rjX0XQA);
 }
 
 h1, h2, h3 {
