@@ -1,0 +1,46 @@
+
+@supports (display: grid){
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    grid-template-areas: "intro intro intro"
+                          "sidebar main main";
+    @include breakpoint(medium){
+      display: block;
+   
+    }
+    @include breakpoint(small){
+    display: block;
+    margin-top: 0%;
+  
+    }
+  }
+  .intro{
+    grid-area: intro;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                          "summary summary summary"
+                          ". preamble preamble";
+    &>header{
+      grid-area: header;
+      border: 1px solid red;
+    }
+    &>.summary{
+      grid-area: summary;
+      border: 1px solid blue;
+    }
+    &>.preamble{
+      grid-area: preamble;
+      border: 1px solid green;
+    }
+  }
+  .sidebar{
+    grid-area: sidebar;
+  }
+  .main{
+    grid-area: main;
+  }
+}
+
