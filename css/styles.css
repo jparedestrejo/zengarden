@@ -37,10 +37,12 @@
 
   .sidebar {
     grid-area: sidebar;
+    border: 1px solid orange;
   }
 
   .main {
     grid-area: main;
+    border: 1px solid yellow;
   }
 }
 
