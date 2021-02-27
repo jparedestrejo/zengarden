@@ -32,25 +32,25 @@
     }
     .intro > header {
       grid-area: header;
-      border: 1px solid red;
+      border: 3px solid red;
     }
     .intro > .summary {
       grid-area: summary;
-      border: 1px solid blue;
+      border: 3px solid blue;
     }
     .intro > .preamble {
       grid-area: preamble;
-      border: 1px solid green;
+      border: 3px solid green;
     }
   
     .sidebar {
       grid-area: sidebar;
-      border: 1px solid orange;
+      border: 3px solid orange;
     }
   
     .main {
       grid-area: main;
-      border: 1px solid yellow;
+      border: 3px solid yellow;
     }
   }
   
