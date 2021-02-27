@@ -26,11 +26,9 @@
     }
     .intro > header {
       grid-area: header;
-      border: 3px solid red;
     }
     .intro > .summary {
       grid-area: summary;
-      border: 3px solid blue;
     }
     .intro > .preamble {
       grid-area: preamble;
