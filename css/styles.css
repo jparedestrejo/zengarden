@@ -62,7 +62,7 @@
   }
   .mainfooter {
     grid-area: footer;
-    justify-self: center;
+    text-align: center;
   }
 }
 /* -------------------------------- 
