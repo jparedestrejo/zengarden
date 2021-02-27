@@ -1,4 +1,5 @@
 
+
 @supports (display: grid){
   .page-wrapper {
     display: grid;
@@ -42,5 +43,6 @@
   .main{
     grid-area: main;
   }
+
 }
 
