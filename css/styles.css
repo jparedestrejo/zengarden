@@ -29,6 +29,7 @@
     }
     .intro > .summary {
       grid-area: summary;
+      font-size: 20px;
     }
     .intro > .preamble {
       grid-area: preamble;
