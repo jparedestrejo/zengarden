@@ -2,21 +2,35 @@
   .page-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: lightblue;
+   
     grid-template-areas: "intro intro intro"
                           "sidebar main main";
     @include breakpoint(medium){
       display: block;
-      background-color: yellow;
+   
     }
     @include breakpoint(small){
     display: block;
     margin-top: 0%;
-    background-color: orange;
+  
     }
   }
   .intro{
     grid-area: intro;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                          "summary summary sumary"
+                          ". preamble preamble";
+    &>header{
+      grid-area: header;
+    }
+    &>summary{
+      grid-area: summary;
+    }
+    &>preamble{
+      grid-area: preamble;
+    }
   }
   .sidebar{
     grid-area: sidebar;
