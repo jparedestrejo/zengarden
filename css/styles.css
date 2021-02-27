@@ -1,73 +1,115 @@
 @supports (display: grid) {
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
-    grid-template-areas: "intro intro intro" "sidebar main main";
+  @media (max-width: 1500px) {
+    .page-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      grid-template-areas: "intro intro intro" "sidebar main main";
+    }
+    .page-wrapper .intro {
+      grid-area: intro;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "header header ." "summary summary ." ". preamble preamble";
+    }
+    .page-wrapper .intro > header {
+      grid-area: header;
+      border: 1px solid red;
+      width: 100%;
+    }
+    .page-wrapper .intro > .summary {
+      grid-area: summary;
+      border: 1px solid blue;
+      width: 100%;
+    }
+    .page-wrapper .intro > .preamble {
+      grid-area: preamble;
+      border: 1px solid green;
+    }
+    .page-wrapper .sidebar {
+      grid-area: sidebar;
+    }
+    .page-wrapper .main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "explanation participation" "benefits requirements" "footer footer";
+    }
+    .page-wrapper .main.explanation {
+      grid-area: explanation;
+    }
+    .page-wrapper .main.participation {
+      grid-area: participation;
+    }
+    .page-wrapper .main.benefits {
+      grid-area: benefits;
+    }
+    .page-wrapper .main.requirements {
+      grid-area: requirements;
+    }
+    .page-wrapper .main > footer {
+      grid-area: footer;
+      text-align: center;
+    }
   }
   @media (max-width: 800px) {
     .page-wrapper {
-      display: block;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "intro" "main" "sidebar";
     }
   }
   @media (max-width: 360px) {
     .page-wrapper {
-      display: block;
-      margin-top: 0%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "intro" "main" "sidebar";
     }
-  }
-
-  .intro {
-    grid-area: intro;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header ." "summary summary ." ". preamble preamble";
-  }
-  .intro > header {
-    grid-area: header;
-    border: 1px solid red;
-    width: 80%;
-    padding: 5px;
-  }
-  .intro > .summary {
-    grid-area: summary;
-    border: 1px solid blue;
-    width: 80%;
-    padding: 5px;
-    text-align: center;
-  }
-  .intro > .preamble {
-    grid-area: preamble;
-    border: 1px solid green;
-    padding: 5px;
-  }
-
-  .sidebar {
-    grid-area: sidebar;
-    padding: 5px;
-  }
-
-  .main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "explanation participation" "benefits requirements" "footer footer";
-  }
-  .main.explanation {
-    grid-area: explanation;
-  }
-  .main.participation {
-    grid-area: participation;
-  }
-  .main.benefits {
-    grid-area: benefits;
-  }
-  .main.requirements {
-    grid-area: requirements;
-  }
-  .main > footer {
-    grid-area: footer;
-    text-align: center;
+    .page-wrapper .intro {
+      grid-area: intro;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "summary" "preamble";
+    }
+    .page-wrapper .intro > header {
+      grid-area: header;
+      border: 1px solid red;
+      width: 100%;
+    }
+    .page-wrapper .intro > .summary {
+      grid-area: summary;
+      border: 1px solid blue;
+      width: 100%;
+    }
+    .page-wrapper .intro > .preamble {
+      grid-area: preamble;
+      border: 1px solid green;
+    }
+    .page-wrapper .sidebar {
+      grid-area: sidebar;
+    }
+    .page-wrapper .main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "explanation" "participation" "benefits" "requirements" "footer";
+    }
+    .page-wrapper .main.explanation {
+      grid-area: explanation;
+    }
+    .page-wrapper .main.participation {
+      grid-area: participation;
+    }
+    .page-wrapper .main.benefits {
+      grid-area: benefits;
+    }
+    .page-wrapper .main.requirements {
+      grid-area: requirements;
+    }
+    .page-wrapper .main > footer {
+      grid-area: footer;
+      text-align: center;
+    }
   }
 }
 /* -------------------------------- 
@@ -75,15 +117,8 @@
 xTypography 
 
 -------------------------------- */
-body {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  background: linear-gradient(lightblue,white,lightblue);
-}
-
 h1, h2, h3 {
   font-weight: bold;
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */

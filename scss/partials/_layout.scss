@@ -5,70 +5,132 @@
     @include breakpoint(large){
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 80%;
+    width: 100%;
    
     grid-template-areas: "intro intro intro"
                           "sidebar main main";
+                          .intro{
+                            grid-area: intro;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-areas: "header header ."
+                                                  "summary summary ."
+                                                  ". preamble preamble";
+                            &>header{
+                              grid-area: header;
+                              border: 1px solid red;
+                              width: 100%;
+                            }
+                            &>.summary{
+                              grid-area: summary;
+                              border: 1px solid blue;
+                              width: 100%;
+                            }
+                            &>.preamble{
+                              grid-area: preamble;
+                              border: 1px solid green;
+                            }
+                          }
+                          .sidebar{
+                            grid-area: sidebar;
+                          }
+                          .main{
+                            grid-area: main;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-areas: "explanation participation"
+                                                  "benefits requirements"
+                                                  "footer footer";
+                            &.explanation{
+                              grid-area: explanation;
+                            }
+                            &.participation{
+                              grid-area: participation;
+                            }
+                            &.benefits{
+                              grid-area: benefits;
+                            }
+                            &.requirements{
+                              grid-area: requirements;
+                            }
+                            &>footer{
+                              grid-area: footer;
+                              text-align: center;
+                            }
+                          }
+
+
     }
     @include breakpoint(medium){
-      display: block;
+      display: grid;
+      grid-template-columns: 1fr;
+   
+    grid-template-areas: "intro"
+                        "main"
+                        "sidebar";
    
     }
     @include breakpoint(small){
-    display: block;
-    margin-top: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+   
+    grid-template-areas: "intro"
+                        "main"
+                        "sidebar";
+                        .intro{
+                          grid-area: intro;
+                          display: grid;
+                          grid-template-columns: 1fr;
+                          grid-template-areas: "header"
+                          "summary"
+                          "preamble";
+                          &>header{
+                            grid-area: header;
+                            border: 1px solid red;
+                            width: 100%;
+                          }
+                          &>.summary{
+                            grid-area: summary;
+                            border: 1px solid blue;
+                            width: 100%;
+                          }
+                          &>.preamble{
+                            grid-area: preamble;
+                            border: 1px solid green;
+                          }
+                        }
+                        .sidebar{
+                          grid-area: sidebar;
+                        }
+                        .main{
+                          grid-area: main;
+                          display: grid;
+                          grid-template-columns: 1fr;
+                          grid-template-areas: "explanation"
+                          "participation"
+                                                "benefits"
+                                                "requirements"
+                                                "footer";
+                          &.explanation{
+                            grid-area: explanation;
+                          }
+                          &.participation{
+                            grid-area: participation;
+                          }
+                          &.benefits{
+                            grid-area: benefits;
+                          }
+                          &.requirements{
+                            grid-area: requirements;
+                          }
+                          &>footer{
+                            grid-area: footer;
+                            text-align: center;
+                          }
+                        }
   
     }
   }
-  .intro{
-    grid-area: intro;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header ."
-                          "summary summary ."
-                          ". preamble preamble";
-    &>header{
-      grid-area: header;
-      border: 1px solid red;
-      width: 70%;
-    }
-    &>.summary{
-      grid-area: summary;
-      border: 1px solid blue;
-      width: 70%;
-    }
-    &>.preamble{
-      grid-area: preamble;
-      border: 1px solid green;
-    }
-  }
-  .sidebar{
-    grid-area: sidebar;
-  }
-  .main{
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "explanation participation"
-                          "benefits requirements"
-                          "footer footer";
-    &.explanation{
-      grid-area: explanation;
-    }
-    &.participation{
-      grid-area: participation;
-    }
-    &.benefits{
-      grid-area: benefits;
-    }
-    &.requirements{
-      grid-area: requirements;
-    }
-    &>footer{
-      grid-area: footer;
-      text-align: center;
-    }
-  }
-
+    
 }
 
