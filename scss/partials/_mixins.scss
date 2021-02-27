@@ -1,0 +1,14 @@
+$break-small:360px;
+$break-medium:800px;
+$break-large:1500px;
+
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (max-width: $break-large) { @content; }
+    }
+    @else if $break == medium {
+        @media (max-width: $break-medium) { @content; }
+    } @else {
+        @media (max-width: $break-small) { @content; }
+    }  
+}         
