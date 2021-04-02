@@ -139,13 +139,18 @@ h2, h3 {
   font-size: 40px;
 }
 
+p {
+  text-align: center;
+  color: #13293D;
+  font-weight: bold;
+}
+
 .page-wrapper {
   background-image: url(https://api.creativecommons.engineering/v1/thumbs/0c02e4b4-a32c-4eb0-b43d-1ef02ae8b846);
   background-attachment: fixed;
   padding: 5px;
   border: 4px solid darkblue;
   background-size: cover;
-  text-align: center;
 }
 
 .zen-resources, .design-selection, .design-archives {
