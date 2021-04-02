@@ -153,9 +153,11 @@ h2, h3 {
   text-align: center;
 }
 
-
-.zen-resources ul {
+a {
   color: #0F4C5C;
+}
+
+.zen-resources ul, .design-archives ul, .design-selection ul {
   list-style-type: none;
 }
 /*# sourceMappingURL=styles.css.map */
