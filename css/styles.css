@@ -134,12 +134,14 @@ h1, h2, h3 {
   background-attachment: fixed;
   padding: 5px;
   border: 4px solid darkblue;
+  background-size: cover;
 }
 
 .zen-resources {
   background-image: url(https://live.staticflickr.com/5309/5784051707_a1b3a6dc16.jpg);
   background-attachment: fixed;
   padding: 5px;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
