@@ -135,7 +135,9 @@ h1, h2, h3 {
 }
 
 .zen-resources {
-  
+  background-image: url(https://live.staticflickr.com/5309/5784051707_a1b3a6dc16.jpg);
+  background-attachment: fixed;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
