@@ -127,6 +127,8 @@ h1, h2, h3 {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  animation-name: font-color-change;
+  animation-duration: 6s;
 }
 
 h1 {
@@ -160,5 +162,13 @@ a {
 
 .zen-resources ul, .design-archives ul, .design-selection ul {
   list-style-type: none;
+}
+
+@keyframes font-color-change {
+  0% {color: darkblue;}
+  25% {color: blue;}
+  50% {color: lightblue;}
+  75% {color: blue;}
+  100% {color: darkblue;}
 }
 /*# sourceMappingURL=styles.css.map */
