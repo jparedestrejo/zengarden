@@ -149,7 +149,9 @@ h1 {
   text-align: center;
 }
 
+
 .zen-resources ul {
   color: #0F4C5C;
+  list-style-type: none;
 }
 /*# sourceMappingURL=styles.css.map */
