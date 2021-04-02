@@ -141,7 +141,7 @@ h1 {
   background-size: cover;
 }
 
-.zen-resources {
+.zen-resources, .design-selection, .design-archives {
   background-image: url(https://live.staticflickr.com/5309/5784051707_a1b3a6dc16.jpg);
   background-attachment: fixed;
   padding: 5px;
