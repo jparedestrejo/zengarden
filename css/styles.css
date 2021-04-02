@@ -145,6 +145,11 @@ p {
   font-weight: bold;
 }
 
+footer {
+  text-align: center;
+  animation: link-color-change 6s infinite;
+}
+
 .page-wrapper {
   background-image: url(https://api.creativecommons.engineering/v1/thumbs/0c02e4b4-a32c-4eb0-b43d-1ef02ae8b846);
   background-attachment: fixed;
