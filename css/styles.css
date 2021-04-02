@@ -176,9 +176,9 @@ a {
 @keyframes font-color-change {
   0% {color: darkblue;}
   25% {color: blue;}
-  37% {color: #7699D4}
-  50% {color: white ;}
-  65% {color: #7699d4}
+  37% {color: darkblue;}
+  50% {color: darkcyan;}
+  65% {color: darkblue}
   75% {color: blue;}
   100% {color: darkblue;}
 }
