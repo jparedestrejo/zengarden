@@ -129,6 +129,10 @@ h1, h2, h3 {
   text-align: center;
 }
 
+h1 {
+  font-size: 65px;
+}
+
 .page-wrapper {
   background-image: url(https://api.creativecommons.engineering/v1/thumbs/0c02e4b4-a32c-4eb0-b43d-1ef02ae8b846);
   background-attachment: fixed;
