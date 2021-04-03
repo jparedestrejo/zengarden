@@ -12,3 +12,16 @@ $break-large:1500px;
         @media (max-width: $break-small) { @content; }
     }  
 }         
+@mixin addIcon($myicon){
+    content:"";
+    position:relative;
+    color:red;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background:url($myicon);
+    background-size:50px;
+    text-indent:49px;
+    overflow:hidden;
+    animation: mover 1s ease-in-out;
+}
