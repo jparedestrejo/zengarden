@@ -207,77 +207,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   background: linear-gradient(lightblue, white, lightblue);
-  
 }
 
 h1, h2, h3 {
   font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  animation: font-color-change 10s infinite;
-}
-
-h1 {
-  font-size: 70px;
-}
-
-h2, h3 {
-  font-size: 40px;
-}
-
-p {
-  text-align: center;
-  color: #13293D;
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  animation: link-color-change 6s infinite;
-}
-
-.page-wrapper {
-  background-image: url(https://api.creativecommons.engineering/v1/thumbs/0c02e4b4-a32c-4eb0-b43d-1ef02ae8b846);
-  background-attachment: fixed;
-  padding: 5px;
-  border: 8px solid darkblue;
-  background-size: cover;
-}
-
-.zen-resources, .design-selection, .design-archives {
-  background-image: url(https://images.unsplash.com/photo-1488921618671-463b781ac428?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fG9jZWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-  background-attachment: fixed;
-  padding: 5px;
-  background-size: cover;
-  text-align: center;
-  border-radius: 10px;
-  
-}
-
-a {
-  animation: link-color-change 6s infinite;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.zen-resources ul, .design-archives ul, .design-selection ul {
-  list-style-type: none;
-}
-
-@keyframes font-color-change {
-  0% {color: darkblue;}
-  25% {color: blue;}
-  37% {color: darkblue;}
-  50% {color: darkcyan;}
-  65% {color: darkblue}
-  75% {color: blue;}
-  100% {color: darkblue;}
-}
-
-@keyframes link-color-change {
-  0% {color: #F038FF;}
-  50% {color: #EF709D;}
-  100% {color: #f038ff;}
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
