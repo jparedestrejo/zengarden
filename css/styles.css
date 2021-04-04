@@ -15,6 +15,14 @@
       grid-area: header;
       border: 1px solid red;
       width: 100%;
+      position: relative;
+      top: -200px;
+      animation: downH 2s forwards;
+      background-image: url(../../assets/branding/ancla.svg);
+      background-size: 100px;
+      background-repeat: no-repeat;
+      background-position: left-top;
+      text-indent: 100px;
     }
     .page-wrapper .intro > .summary {
       grid-area: summary;
@@ -197,6 +205,15 @@
   .sidebar {
     grid-area: sidebar;
   }
+
+  @keyframes downH {
+    from {
+      top: -200;
+    }
+    to {
+      top: 0;
+    }
+  }
 }
 /* -------------------------------- 
 
@@ -207,7 +224,246 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   background: linear-gradient(lightblue, white, lightblue);
-  
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@supports (display: grid) {
+  @media (max-width: 1500px) {
+    .page-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      grid-template-areas: "intro intro intro" "sidebar main main";
+    }
+
+    .page-wrapper .intro {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "header header ." "summary summary ." ". preamble preamble";
+    }
+
+    .page-wrapper .intro > header {
+      grid-area: header;
+      border: 1px solid red;
+      width: 100%;
+    }
+
+    .page-wrapper .intro > .summary {
+      grid-area: summary;
+      border: 1px solid blue;
+      width: 100%;
+    }
+
+    .page-wrapper .intro > .preamble {
+      grid-area: preamble;
+      border: 1px solid green;
+    }
+
+    .page-wrapper .main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "explanation participation" "benefits requirements" "footer footer";
+    }
+
+    .page-wrapper .main.explanation {
+      grid-area: explanation;
+    }
+
+    .page-wrapper .main.participation {
+      grid-area: participation;
+    }
+
+    .page-wrapper .main.benefits {
+      grid-area: benefits;
+    }
+
+    .page-wrapper .main.requirements {
+      grid-area: requirements;
+    }
+
+    .page-wrapper .main > footer {
+      grid-area: footer;
+      text-align: center;
+    }
+
+    .page-wrapper .main > footer a:nth-child(1) {
+      content: "";
+      position: relative;
+      color: red;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: url("../../assets/branding/html5.svg");
+      background-size: 50px;
+      text-indent: 49px;
+      overflow: hidden;
+      animation: mover 1s ease-in-out;
+      animation-delay: 1s;
+    }
+
+    .page-wrapper .main > footer a:nth-child(2) {
+      content: "";
+      position: relative;
+      color: red;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: url("../../assets/branding/css.svg");
+      background-size: 50px;
+      text-indent: 49px;
+      overflow: hidden;
+      animation: mover 1s ease-in-out;
+      animation-delay: 2s;
+    }
+
+    .page-wrapper .main > footer a:nth-child(3) {
+      content: "";
+      position: relative;
+      color: red;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: url("../../assets/branding/cc.svg");
+      background-size: 50px;
+      text-indent: 49px;
+      overflow: hidden;
+      animation: mover 1s ease-in-out;
+      animation-delay: 3s;
+    }
+
+    .page-wrapper .main > footer a:nth-child(4) {
+      content: "";
+      position: relative;
+      color: red;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: url("../../assets/branding/access.svg");
+      background-size: 50px;
+      text-indent: 49px;
+      overflow: hidden;
+      animation: mover 1s ease-in-out;
+      animation-delay: 4s;
+    }
+
+    .page-wrapper .main > footer a:nth-child(5) {
+      content: "";
+      position: relative;
+      color: red;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: url("../../assets/branding/github.svg");
+      background-size: 50px;
+      text-indent: 49px;
+      overflow: hidden;
+      animation: mover 1s ease-in-out;
+      animation-delay: 5s;
+    }
+  }
+  @media (max-width: 800px) {
+    .page-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "intro" "main" "sidebar";
+    }
+  }
+  @media (max-width: 360px) {
+    .page-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "intro" "main" "sidebar";
+    }
+
+    .page-wrapper .intro {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "summary" "preamble";
+    }
+
+    .page-wrapper .intro > header {
+      grid-area: header;
+      border: 1px solid red;
+      width: 100%;
+    }
+
+    .page-wrapper .intro > .summary {
+      grid-area: summary;
+      border: 1px solid blue;
+      width: 100%;
+    }
+
+    .page-wrapper .intro > .preamble {
+      grid-area: preamble;
+      border: 1px solid green;
+    }
+
+    .page-wrapper .main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "explanation" "participation" "benefits" "requirements" "footer";
+    }
+
+    .page-wrapper .main.explanation {
+      grid-area: explanation;
+    }
+
+    .page-wrapper .main.participation {
+      grid-area: participation;
+    }
+
+    .page-wrapper .main.benefits {
+      grid-area: benefits;
+    }
+
+    .page-wrapper .main.requirements {
+      grid-area: requirements;
+    }
+
+    .page-wrapper .main > footer {
+      grid-area: footer;
+      text-align: center;
+    }
+  }
+  @keyframes mover {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .intro {
+    grid-area: intro;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+}
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(lightblue, white, lightblue);
 }
 
 h1, h2, h3 {
@@ -251,7 +507,6 @@ footer {
   background-size: cover;
   text-align: center;
   border-radius: 10px;
-  
 }
 
 a {
@@ -265,19 +520,39 @@ a {
 }
 
 @keyframes font-color-change {
-  0% {color: darkblue;}
-  25% {color: blue;}
-  37% {color: darkblue;}
-  50% {color: darkcyan;}
-  65% {color: darkblue}
-  75% {color: blue;}
-  100% {color: darkblue;}
+  0% {
+    color: darkblue;
+  }
+  25% {
+    color: blue;
+  }
+  37% {
+    color: darkblue;
+  }
+  50% {
+    color: darkcyan;
+  }
+  65% {
+    color: darkblue;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: darkblue;
+  }
 }
-
 @keyframes link-color-change {
-  0% {color: #F038FF;}
-  50% {color: #EF709D;}
-  100% {color: #f038ff;}
+  0% {
+    color: #F038FF;
+  }
+  50% {
+    color: #EF709D;
+  }
+  100% {
+    color: #f038ff;
+  }
 }
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */

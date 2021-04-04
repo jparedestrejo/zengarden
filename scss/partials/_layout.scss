@@ -1,5 +1,4 @@
 
-
 @supports (display: grid){
   .page-wrapper {
     @include breakpoint(large){
@@ -16,10 +15,19 @@
                             grid-template-areas: "header header ."
                                                   "summary summary ."
                                                   ". preamble preamble";
-                            &>header{
-                              grid-area: header;
-                              border: 1px solid red;
-                              width: 100%;
+                                                  &>header{
+                                                    grid-area: header;
+                                                    border: 1px solid red;
+                                                    width: 100%;
+                                                    position: relative;
+                                                    top: -200px;
+                                                    animation: downH 2s forwards;
+                                                    background-image: url(../../assets/branding/ancla.svg);
+                                                    background-size:100px;
+                                                    background-repeat: no-repeat;
+                                                    background-position: left-top;
+                                                    text-indent: 100px;
+                                                  
                             }
                             &>.summary{
                               grid-area: summary;
@@ -171,15 +179,14 @@
   .sidebar{
     grid-area: sidebar;
   }
-}
 
 
- 
-  @keyframes downH {
-    from{
-      top:-200;
-    }
-    to{
-      top:0;
-    }
+@keyframes downH {
+  from{
+    top:-200;
   }
+  to{
+    top:0;
+  }
+}
+}
