@@ -10,7 +10,7 @@
     grid-template-areas: "intro intro intro"
                           "sidebar main main";
                           .intro{
-                            grid-area: intro;
+                          
                             display: grid;
                             grid-template-columns: repeat(3, 1fr);
                             grid-template-areas: "header header ."
@@ -31,11 +31,9 @@
                               border: 1px solid green;
                             }
                           }
-                          .sidebar{
-                            grid-area: sidebar;
-                          }
+                    
                           .main{
-                            grid-area: main;
+                    
                             display: grid;
                             grid-template-columns: repeat(2, 1fr);
                             grid-template-areas: "explanation participation"
@@ -98,7 +96,7 @@
                         "main"
                         "sidebar";
                         .intro{
-                          grid-area: intro;
+                          
                           display: grid;
                           grid-template-columns: 1fr;
                           grid-template-areas: "header"
@@ -119,11 +117,9 @@
                             border: 1px solid green;
                           }
                         }
-                        .sidebar{
-                          grid-area: sidebar;
-                        }
+               
                         .main{
-                          grid-area: main;
+               
                           display: grid;
                           grid-template-columns: 1fr;
                           grid-template-areas: "explanation"

@@ -7,7 +7,6 @@
       grid-template-areas: "intro intro intro" "sidebar main main";
     }
     .page-wrapper .intro {
-      grid-area: intro;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "header header ." "summary summary ." ". preamble preamble";
@@ -26,11 +25,7 @@
       grid-area: preamble;
       border: 1px solid green;
     }
-    .page-wrapper .sidebar {
-      grid-area: sidebar;
-    }
     .page-wrapper .main {
-      grid-area: main;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "explanation participation" "benefits requirements" "footer footer";
@@ -136,7 +131,6 @@
       grid-template-areas: "intro" "main" "sidebar";
     }
     .page-wrapper .intro {
-      grid-area: intro;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-areas: "header" "summary" "preamble";
@@ -155,11 +149,7 @@
       grid-area: preamble;
       border: 1px solid green;
     }
-    .page-wrapper .sidebar {
-      grid-area: sidebar;
-    }
     .page-wrapper .main {
-      grid-area: main;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-areas: "explanation" "participation" "benefits" "requirements" "footer";
