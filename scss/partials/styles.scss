@@ -1,0 +1,200 @@
+
+
+
+@supports (display: grid) {
+    @media (max-width: 1500px) {
+      .page-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        grid-template-areas: "intro intro intro" "sidebar main main";
+      }
+      .page-wrapper .intro {
+        grid-area: intro;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "header header ." "summary summary ." ". preamble preamble";
+      }
+      .page-wrapper .intro > header {
+        grid-area: header;
+        border: 1px solid red;
+        width: 100%;
+      }
+      .page-wrapper .intro > .summary {
+        grid-area: summary;
+        border: 1px solid blue;
+        width: 100%;
+      }
+      .page-wrapper .intro > .preamble {
+        grid-area: preamble;
+        border: 1px solid green;
+      }
+      .page-wrapper .sidebar {
+        grid-area: sidebar;
+      }
+      .page-wrapper .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "explanation participation" "benefits requirements" "footer footer";
+      }
+      .page-wrapper .main.explanation {
+        grid-area: explanation;
+      }
+      .page-wrapper .main.participation {
+        grid-area: participation;
+      }
+      .page-wrapper .main.benefits {
+        grid-area: benefits;
+      }
+      .page-wrapper .main.requirements {
+        grid-area: requirements;
+      }
+      .page-wrapper .main > footer {
+        grid-area: footer;
+        text-align: center;
+      }
+    }
+    @media (max-width: 800px) {
+      .page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "intro" "main" "sidebar";
+      }
+    }
+    @media (max-width: 360px) {
+      .page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "intro" "main" "sidebar";
+      }
+      .page-wrapper .intro {
+        grid-area: intro;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "summary" "preamble";
+      }
+      .page-wrapper .intro > header {
+        grid-area: header;
+        border: 1px solid red;
+        width: 100%;
+      }
+      .page-wrapper .intro > .summary {
+        grid-area: summary;
+        border: 1px solid blue;
+        width: 100%;
+      }
+      .page-wrapper .intro > .preamble {
+        grid-area: preamble;
+        border: 1px solid green;
+      }
+      .page-wrapper .sidebar {
+        grid-area: sidebar;
+      }
+      .page-wrapper .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "explanation" "participation" "benefits" "requirements" "footer";
+      }
+      .page-wrapper .main.explanation {
+        grid-area: explanation;
+      }
+      .page-wrapper .main.participation {
+        grid-area: participation;
+      }
+      .page-wrapper .main.benefits {
+        grid-area: benefits;
+      }
+      .page-wrapper .main.requirements {
+        grid-area: requirements;
+      }
+      .page-wrapper .main > footer {
+        grid-area: footer;
+        text-align: center;
+      }
+    }
+  }
+  /* -------------------------------- 
+  
+  xTypography 
+  
+  -------------------------------- */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: linear-gradient(lightblue, white, lightblue);
+    
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    animation: font-color-change 10s infinite;
+  }
+  
+  h1 {
+    font-size: 70px;
+  }
+  
+  h2, h3 {
+    font-size: 40px;
+  }
+  
+  p {
+    text-align: center;
+    color: #13293D;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    animation: link-color-change 6s infinite;
+  }
+  
+  .page-wrapper {
+    background-image: url(https://api.creativecommons.engineering/v1/thumbs/0c02e4b4-a32c-4eb0-b43d-1ef02ae8b846);
+    background-attachment: fixed;
+    padding: 5px;
+    border: 8px solid darkblue;
+    background-size: cover;
+  }
+  
+  .zen-resources, .design-selection, .design-archives {
+    background-image: url(https://images.unsplash.com/photo-1488921618671-463b781ac428?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fG9jZWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-attachment: fixed;
+    padding: 5px;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    
+  }
+  
+  a {
+    animation: link-color-change 6s infinite;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .zen-resources ul, .design-archives ul, .design-selection ul {
+    list-style-type: none;
+  }
+  
+  @keyframes font-color-change {
+    0% {color: darkblue;}
+    25% {color: blue;}
+    37% {color: darkblue;}
+    50% {color: darkcyan;}
+    65% {color: darkblue}
+    75% {color: blue;}
+    100% {color: darkblue;}
+  }
+  
+  @keyframes link-color-change {
+    0% {color: #F038FF;}
+    50% {color: #EF709D;}
+    100% {color: #f038ff;}
+  }
+  /*# sourceMappingURL=styles.css.map */
+  
